@@ -5,7 +5,7 @@ RUN tar -xzf ./apache-tomcat* -C /opt/ && mv /opt/apache-tomcat* /opt/apache-tom
 WORKDIR /opt/apache-tomcat
 ADD https://github.com/Shantanu20000/Docker/blob/main/FrontEnd%20Apache/student.war
 COPY student.war ./webapps/
-ADD 
+ADD https://github.com/Shantanu20000/Docker/blob/main/FrontEnd%20Apache/context.xml
 COPY context.xml ./conf/context.xml
 ADD https://github.com/Shantanu20000/Docker/blob/main/FrontEnd%20Apache/mysql-connector.jar ./lib/
 ENTRYPOINT ["./bin/catalina.sh", "run"]
