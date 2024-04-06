@@ -5,6 +5,6 @@ RUN tar -xzf ./apache-tomcat* -C /opt/ && mv /opt/apache-tomcat* /opt/apache-tom
 WORKDIR /opt/apache-tomcat
 COPY student.war ./webapps/
 COPY context.xml ./conf/context.xml
-ADD [link of jar connector] ./lib/
+ADD https://github.com/Shantanu20000/Docker/blob/main/FrontEnd%20Apache/mysql-connector.jar ./lib/
 ENTRYPOINT ["./bin/catalina.sh", "run"]
 EXPOSE 8080
