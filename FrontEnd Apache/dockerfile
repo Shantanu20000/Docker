@@ -3,9 +3,9 @@ RUN yum install java -y
 ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.87/bin/apache-tomcat-9.0.87.tar.gz
 RUN tar -xzf ./apache-tomcat* -C /opt/ && mv /opt/apache-tomcat* /opt/apache-tomcat
 WORKDIR /opt/apache-tomcat
-ADD https://github.com/Shantanu20000/Docker/blob/main/FrontEnd%20Apache/mysql-connector.jar
-ADD 
+ADD https://github.com/Shantanu20000/Docker/blob/main/FrontEnd%20Apache/student.war
 COPY student.war ./webapps/
+ADD 
 COPY context.xml ./conf/context.xml
 ADD https://github.com/Shantanu20000/Docker/blob/main/FrontEnd%20Apache/mysql-connector.jar ./lib/
 ENTRYPOINT ["./bin/catalina.sh", "run"]
