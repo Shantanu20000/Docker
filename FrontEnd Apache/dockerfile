@@ -1,0 +1,8 @@
+FROM centos:7
+RUN yum install java -y
+ADD https://dlcdn.apache.org/tomcat/tomcat-9/v9.0.87/bin/apache-tomcat-9.0.87.tar.gz
+RUN tar -xzf ./apache-tomcat* -C /opt/ && mv /opt/apache-tomcat* /opt/apache-tomcat
+WORKDIR /opt/apache-tomcat
+COPY student.war ./webapps/
+COPY context.xml ./conf/context.xml
+ADD 
