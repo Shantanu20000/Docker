@@ -7,3 +7,4 @@ COPY student.war ./webapps/
 COPY context.xml ./conf/context.xml
 ADD [link of jar connector] ./lib/
 ENTRYPOINT ["./bin/catalina.sh", "run"]
+EXPOSE 
