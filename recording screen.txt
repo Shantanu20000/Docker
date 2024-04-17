@@ -1,0 +1,1061 @@
+Reading state information... Done
+The following additional packages will be installed:
+  docker-ce-rootless-extras libltdl7 libslirp0 pigz slirp4netns
+Suggested packages:
+  aufs-tools cgroupfs-mount | cgroup-lite
+The following NEW packages will be installed:
+  containerd.io docker-buildx-plugin docker-ce docker-ce-cli docker-ce-rootless-extras docker-compose-plugin libltdl7 libslirp0 pigz slirp4netns
+0 upgraded, 10 newly installed, 0 to remove and 42 not upgraded.
+Need to get 120 MB of archives.
+After this operation, 430 MB of additional disk space will be used.
+Do you want to continue? [Y/n] y
+Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 pigz amd64 2.6-1 [63.6 kB]
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libltdl7 amd64 2.4.6-15build2 [39.6 kB]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu jammy/main amd64 libslirp0 amd64 4.6.1-1build1 [61.5 kB]
+Get:4 http://us-east-1.ec2.archive.ubuntu.com/ubuntu jammy/universe amd64 slirp4netns amd64 1.0.1-2 [28.2 kB]
+Get:5 https://download.docker.com/linux/ubuntu jammy/stable amd64 containerd.io amd64 1.6.31-1 [29.8 MB]
+Get:6 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-buildx-plugin amd64 0.13.1-1~ubuntu.22.04~jammy [29.5 MB]
+Get:7 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-ce-cli amd64 5:26.0.1-1~ubuntu.22.04~jammy [13.8 MB]
+Get:8 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-ce amd64 5:26.0.1-1~ubuntu.22.04~jammy [25.1 MB]
+Get:9 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-ce-rootless-extras amd64 5:26.0.1-1~ubuntu.22.04~jammy [9319 kB]
+Get:10 https://download.docker.com/linux/ubuntu jammy/stable amd64 docker-compose-plugin amd64 2.26.1-1~ubuntu.22.04~jammy [12.4 MB]
+Fetched 120 MB in 2s (55.1 MB/s)             
+Selecting previously unselected package pigz.
+(Reading database ... 65273 files and directories currently installed.)
+Preparing to unpack .../0-pigz_2.6-1_amd64.deb ...
+Unpacking pigz (2.6-1) ...
+Selecting previously unselected package containerd.io.
+Preparing to unpack .../1-containerd.io_1.6.31-1_amd64.deb ...
+Unpacking containerd.io (1.6.31-1) ...
+Selecting previously unselected package docker-buildx-plugin.
+Preparing to unpack .../2-docker-buildx-plugin_0.13.1-1~ubuntu.22.04~jammy_amd64.deb ...
+Unpacking docker-buildx-plugin (0.13.1-1~ubuntu.22.04~jammy) ...
+Selecting previously unselected package docker-ce-cli.
+Preparing to unpack .../3-docker-ce-cli_5%3a26.0.1-1~ubuntu.22.04~jammy_amd64.deb ...
+Unpacking docker-ce-cli (5:26.0.1-1~ubuntu.22.04~jammy) ...
+Selecting previously unselected package docker-ce.
+Preparing to unpack .../4-docker-ce_5%3a26.0.1-1~ubuntu.22.04~jammy_amd64.deb ...
+Unpacking docker-ce (5:26.0.1-1~ubuntu.22.04~jammy) ...
+Selecting previously unselected package docker-ce-rootless-extras.
+Preparing to unpack .../5-docker-ce-rootless-extras_5%3a26.0.1-1~ubuntu.22.04~jammy_amd64.deb ...
+Unpacking docker-ce-rootless-extras (5:26.0.1-1~ubuntu.22.04~jammy) ...
+Selecting previously unselected package docker-compose-plugin.
+Preparing to unpack .../6-docker-compose-plugin_2.26.1-1~ubuntu.22.04~jammy_amd64.deb ...
+Unpacking docker-compose-plugin (2.26.1-1~ubuntu.22.04~jammy) ...
+Selecting previously unselected package libltdl7:amd64.
+Preparing to unpack .../7-libltdl7_2.4.6-15build2_amd64.deb ...
+Unpacking libltdl7:amd64 (2.4.6-15build2) ...
+Selecting previously unselected package libslirp0:amd64.
+Preparing to unpack .../8-libslirp0_4.6.1-1build1_amd64.deb ...
+Unpacking libslirp0:amd64 (4.6.1-1build1) ...
+Selecting previously unselected package slirp4netns.
+Preparing to unpack .../9-slirp4netns_1.0.1-2_amd64.deb ...
+Unpacking slirp4netns (1.0.1-2) ...
+Setting up docker-buildx-plugin (0.13.1-1~ubuntu.22.04~jammy) ...
+Setting up containerd.io (1.6.31-1) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/containerd.service → /lib/systemd/system/containerd.service.
+Setting up docker-compose-plugin (2.26.1-1~ubuntu.22.04~jammy) ...
+Setting up libltdl7:amd64 (2.4.6-15build2) ...
+Setting up docker-ce-cli (5:26.0.1-1~ubuntu.22.04~jammy) ...
+Setting up libslirp0:amd64 (4.6.1-1build1) ...
+Setting up pigz (2.6-1) ...
+Setting up docker-ce-rootless-extras (5:26.0.1-1~ubuntu.22.04~jammy) ...
+Setting up slirp4netns (1.0.1-2) ...
+Setting up docker-ce (5:26.0.1-1~ubuntu.22.04~jammy) ...
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /lib/systemd/system/docker.service.
+Created symlink /etc/systemd/system/sockets.target.wants/docker.socket → /lib/systemd/system/docker.socket.
+Processing triggers for man-db (2.10.2-1) ...
+Processing triggers for libc-bin (2.35-0ubuntu3.6) ...
+Scanning processes...                                                                                                                                                 
+Scanning linux images...                                                                                                                                              
+
+Running kernel seems to be up-to-date.
+
+No services need to be restarted.
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+root@ip-172-31-16-73:~# docker -v
+Docker version 26.0.1, build d260a54
+root@ip-172-31-16-73:~# cd /home/ubuntu/
+root@ip-172-31-16-73:/home/ubuntu# ls
+Dockerfile  context.xml  student.war
+root@ip-172-31-16-73:/home/ubuntu# mkdir Backend
+root@ip-172-31-16-73:/home/ubuntu# mv Dockerfile Backend/Dockerfile
+root@ip-172-31-16-73:/home/ubuntu# mv context.xml Backend/context.xml
+root@ip-172-31-16-73:/home/ubuntu# cd /B
+-bash: cd: /B: No such file or directory
+root@ip-172-31-16-73:/home/ubuntu# cd Backend/
+root@ip-172-31-16-73:/home/ubuntu/Backend# ls
+Dockerfile  context.xml
+root@ip-172-31-16-73:/home/ubuntu/Backend# cd ..
+root@ip-172-31-16-73:/home/ubuntu# mv student.war Backend/
+root@ip-172-31-16-73:/home/ubuntu# ls Backend/
+Dockerfile  context.xml  student.war
+root@ip-172-31-16-73:/home/ubuntu# ls
+Backend
+root@ip-172-31-16-73:/home/ubuntu# cd Database/
+root@ip-172-31-16-73:/home/ubuntu/Database# vim Dockerfile 
+root@ip-172-31-16-73:/home/ubuntu/Database# docker build -t Backend:Student .
+[+] Building 0.0s (0/0)                                                                                                                                docker:default
+ERROR: invalid tag "Backend:Student": repository name must be lowercase
+root@ip-172-31-16-73:/home/ubuntu/Database# docker build -t backend:student .
+[+] Building 16.8s (7/7) FINISHED                                                                                                                      docker:default
+ => [internal] load build definition from Dockerfile                                                                                                             0.1s
+ => => transferring dockerfile: 178B                                                                                                                             0.0s
+ => [internal] load metadata for docker.io/library/mysql:latest                                                                                                  0.6s
+ => [internal] load .dockerignore                                                                                                                                0.0s
+ => => transferring context: 2B                                                                                                                                  0.0s
+ => [internal] load build context                                                                                                                                0.0s
+ => => transferring context: 421B                                                                                                                                0.0s
+ => [1/2] FROM docker.io/library/mysql:latest@sha256:0f2e15fb8b47db2518b1428239ed3e3fe6a6693401b2cf19552063562cfc2fc4                                           15.8s
+ => => resolve docker.io/library/mysql:latest@sha256:0f2e15fb8b47db2518b1428239ed3e3fe6a6693401b2cf19552063562cfc2fc4                                            0.0s
+ => => sha256:0f2e15fb8b47db2518b1428239ed3e3fe6a6693401b2cf19552063562cfc2fc4 2.51kB / 2.51kB                                                                   0.0s
+ => => sha256:dd1a4da808dd02e76718ff6f7ac40eb217687bd0fcd253d88238a39da21dc5f4 884B / 884B                                                                       0.1s
+ => => sha256:3292fb4adf41458b3405e4fab39ac956e9b0f416e99d47965f29da3b5d9e69aa 983.00kB / 983.00kB                                                               0.1s
+ => => sha256:076e3b41dfa9b184815b1239e37dd709bfddfdbf0e425eebb17c740705815b52 2.86kB / 2.86kB                                                                   0.0s
+ => => sha256:65f3f983cb088300e9fe51eb4d855c4c353f7afae9f035e9553148cfeb665e8f 6.53kB / 6.53kB                                                                   0.0s
+ => => sha256:2ba873cb070a415e56d6738ae3d788d885c6c5f1ff7e83f992de040a8e758b46 51.32MB / 51.32MB                                                                 1.0s
+ => => sha256:3811c45068ccd835ac871817eea43ac59bfe8495799508c3a2b14892d9a5293e 4.59MB / 4.59MB                                                                   0.4s
+ => => sha256:e13320244c05a40c7dbd1a258b070d485426553b22eeba4859320d8d3908f327 2.61kB / 2.61kB                                                                   0.2s
+ => => sha256:6a34d702f2813fc3cf78dabf8d762fe3af066b682a2a968e6ffcfef9482588d4 340B / 340B                                                                       0.3s
+ => => sha256:de90f448147740b877cd5a67ad605595d4cdea350ee3d1eee6ab9a09062f42b6 63.08MB / 63.08MB                                                                 1.9s
+ => => sha256:d575200ae3755746a3740ff1224a9cabd56187b00a76f67a02b02d8ec2a8fc48 324B / 324B                                                                       0.5s
+ => => sha256:aea400be5707154f3b61c33ae937ff92fd75991ee6e4aa90a1aef9d83ba3087b 63.39MB / 63.39MB                                                                 2.7s
+ => => sha256:38c930606a4f11cfa2329527166ba39c9ae607166fe9ea129f7f501c2a765d4a 5.18kB / 5.18kB                                                                   1.1s
+ => => extracting sha256:2ba873cb070a415e56d6738ae3d788d885c6c5f1ff7e83f992de040a8e758b46                                                                        3.3s
+ => => extracting sha256:dd1a4da808dd02e76718ff6f7ac40eb217687bd0fcd253d88238a39da21dc5f4                                                                        0.0s
+ => => extracting sha256:3292fb4adf41458b3405e4fab39ac956e9b0f416e99d47965f29da3b5d9e69aa                                                                        0.0s
+ => => extracting sha256:3811c45068ccd835ac871817eea43ac59bfe8495799508c3a2b14892d9a5293e                                                                        0.3s
+ => => extracting sha256:e13320244c05a40c7dbd1a258b070d485426553b22eeba4859320d8d3908f327                                                                        0.0s
+ => => extracting sha256:6a34d702f2813fc3cf78dabf8d762fe3af066b682a2a968e6ffcfef9482588d4                                                                        0.0s
+ => => extracting sha256:de90f448147740b877cd5a67ad605595d4cdea350ee3d1eee6ab9a09062f42b6                                                                        2.9s
+ => => extracting sha256:d575200ae3755746a3740ff1224a9cabd56187b00a76f67a02b02d8ec2a8fc48                                                                        0.0s
+ => => extracting sha256:aea400be5707154f3b61c33ae937ff92fd75991ee6e4aa90a1aef9d83ba3087b                                                                        7.1s
+ => => extracting sha256:38c930606a4f11cfa2329527166ba39c9ae607166fe9ea129f7f501c2a765d4a                                                                        0.0s
+ => [2/2] COPY student-rds.sql /docker-entrypoint-initdb.d/                                                                                                      0.1s
+ => exporting to image                                                                                                                                           0.1s
+ => => exporting layers                                                                                                                                          0.0s
+ => => writing image sha256:ac62fdd3ae2a1bbc8325a21934f6716e11d9a0bb7b39462346eee219a8fb1ee2                                                                     0.0s
+ => => naming to docker.io/library/backend:student                                                                                                               0.0s
+root@ip-172-31-16-73:/home/ubuntu/Database# docker images
+REPOSITORY   TAG       IMAGE ID       CREATED          SIZE
+backend      student   ac62fdd3ae2a   47 seconds ago   632MB
+root@ip-172-31-16-73:/home/ubuntu/Database# cd ../Backend/
+root@ip-172-31-16-73:/home/ubuntu/Backend# docker build -t database:student .
+[+] Building 70.1s (17/17) FINISHED                                                                                                                    docker:default
+ => [internal] load build definition from Dockerfile                                                                                                             0.0s
+ => => transferring dockerfile: 532B                                                                                                                             0.0s
+ => [internal] load metadata for docker.io/library/centos:7                                                                                                      0.8s
+ => [internal] load .dockerignore                                                                                                                                0.0s
+ => => transferring context: 2B                                                                                                                                  0.0s
+ => [ 1/10] FROM docker.io/library/centos:7@sha256:be65f488b7764ad3638f236b7b515b3678369a5124c47b8d32916d6487418ea4                                              6.1s
+ => => resolve docker.io/library/centos:7@sha256:be65f488b7764ad3638f236b7b515b3678369a5124c47b8d32916d6487418ea4                                                0.0s
+ => => sha256:be65f488b7764ad3638f236b7b515b3678369a5124c47b8d32916d6487418ea4 1.20kB / 1.20kB                                                                   0.0s
+ => => sha256:dead07b4d8ed7e29e98de0f4504d87e8880d4347859d839686a31da35a3b532f 529B / 529B                                                                       0.0s
+ => => sha256:eeb6ee3f44bd0b5103bb561b4c16bcb82328cfe5809ab675bb17ab3a16c517c9 2.75kB / 2.75kB                                                                   0.0s
+ => => sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc 76.10MB / 76.10MB                                                                 1.0s
+ => => extracting sha256:2d473b07cdd5f0912cd6f1a703352c82b512407db6b05b43f2553732b55df3bc                                                                        4.6s
+ => [10/10] ADD https://s3-us-west-2.amazonaws.com/studentapi-cit/mysql-connector.jar lib/mysql-connector.jar                                                    0.8s
+ => [internal] load build context                                                                                                                                0.2s
+ => => transferring context: 91.12kB                                                                                                                             0.1s
+ => [ 5/10] ADD https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.99/bin/apache-tomcat-8.5.99.tar.gz /opt/                                                           1.1s
+ => [ 2/10] RUN yum update -y                                                                                                                                   27.7s
+ => [ 3/10] RUN yum install java -y                                                                                                                             21.6s 
+ => [ 4/10] WORKDIR /opt                                                                                                                                         0.1s 
+ => [ 5/10] ADD https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.99/bin/apache-tomcat-8.5.99.tar.gz /opt/                                                           0.2s 
+ => [ 6/10] RUN tar -xzf apache-tomcat-8.5.99.tar.gz                                                                                                             1.3s 
+ => [ 7/10] WORKDIR /opt/apache-tomcat-8.5.99                                                                                                                    0.0s 
+ => [ 8/10] COPY student.war webapps/student.war                                                                                                                 0.0s 
+ => [ 9/10] COPY context.xml conf/context.xml                                                                                                                    0.0s 
+ => [10/10] ADD https://s3-us-west-2.amazonaws.com/studentapi-cit/mysql-connector.jar lib/mysql-connector.jar                                                    0.1s
+ => exporting to image                                                                                                                                          11.9s
+ => => exporting layers                                                                                                                                         11.8s
+ => => writing image sha256:c86b9c62fb053426ef7f9d5a34cb563f11b975294c0920c32306bf478303040b                                                                     0.0s
+ => => naming to docker.io/library/database:student                                                                                                              0.0s
+root@ip-172-31-16-73:/home/ubuntu/Backend# c^C
+root@ip-172-31-16-73:/home/ubuntu/Backend# ^C
+root@ip-172-31-16-73:/home/ubuntu/Backend# ^C
+root@ip-172-31-16-73:/home/ubuntu/Backend# ^C
+root@ip-172-31-16-73:/home/ubuntu/Backend# ^C
+root@ip-172-31-16-73:/home/ubuntu/Backend# ^C
+root@ip-172-31-16-73:/home/ubuntu/Backend# ^C
+root@ip-172-31-16-73:/home/ubuntu/Backend# ^C
+root@ip-172-31-16-73:/home/ubuntu/Backend# ^C
+root@ip-172-31-16-73:/home/ubuntu/Backend# ^C
+root@ip-172-31-16-73:/home/ubuntu/Backend# ^C
+root@ip-172-31-16-73:/home/ubuntu/Backend# ^C
+root@ip-172-31-16-73:/home/ubuntu/Backend# ^C
+root@ip-172-31-16-73:/home/ubuntu/Backend# docker images
+REPOSITORY   TAG       IMAGE ID       CREATED              SIZE
+database     student   c86b9c62fb05   About a minute ago   1.03GB
+backend      student   ac62fdd3ae2a   4 minutes ago        632MB
+root@ip-172-31-16-73:/home/ubuntu/Backend# docker rmi $(docker images -q)
+Untagged: database:student
+Deleted: sha256:c86b9c62fb053426ef7f9d5a34cb563f11b975294c0920c32306bf478303040b
+Untagged: backend:student
+Deleted: sha256:ac62fdd3ae2a1bbc8325a21934f6716e11d9a0bb7b39462346eee219a8fb1ee2
+root@ip-172-31-16-73:/home/ubuntu/Backend# cd ../Database
+root@ip-172-31-16-73:/home/ubuntu/Database# docker build -t database:student .
+[+] Building 0.5s (7/7) FINISHED                                                                                                                       docker:default
+ => [internal] load build definition from Dockerfile                                                                                                             0.0s
+ => => transferring dockerfile: 178B                                                                                                                             0.0s
+ => [internal] load metadata for docker.io/library/mysql:latest                                                                                                  0.3s
+ => [internal] load .dockerignore                                                                                                                                0.0s
+ => => transferring context: 2B                                                                                                                                  0.0s
+ => [internal] load build context                                                                                                                                0.0s
+ => => transferring context: 37B                                                                                                                                 0.0s
+ => [1/2] FROM docker.io/library/mysql:latest@sha256:0f2e15fb8b47db2518b1428239ed3e3fe6a6693401b2cf19552063562cfc2fc4                                            0.0s
+ => CACHED [2/2] COPY student-rds.sql /docker-entrypoint-initdb.d/                                                                                               0.0s
+ => exporting to image                                                                                                                                           0.0s
+ => => exporting layers                                                                                                                                          0.0s
+ => => writing image sha256:ac62fdd3ae2a1bbc8325a21934f6716e11d9a0bb7b39462346eee219a8fb1ee2                                                                     0.0s
+ => => naming to docker.io/library/database:student                                                                                                              0.0s
+root@ip-172-31-16-73:/home/ubuntu/Database# cd ../Backend/
+root@ip-172-31-16-73:/home/ubuntu/Backend# ls
+Dockerfile  context.xml  student.war
+root@ip-172-31-16-73:/home/ubuntu/Backend# docker run -it -d -P database:student --name Database
+dd9e1c53379cbde6c81d719f1019f7beb0fc9eddfebe9ba79de9023215f39d30
+root@ip-172-31-16-73:/home/ubuntu/Backend# docker ps
+CONTAINER ID   IMAGE              COMMAND                  CREATED         STATUS         PORTS                                                                                        NAMES
+dd9e1c53379c   database:student   "docker-entrypoint.s…"   6 seconds ago   Up 4 seconds   0.0.0.0:32769->3306/tcp, :::32769->3306/tcp, 0.0.0.0:32768->33060/tcp, :::32768->33060/tcp   epic_cannon
+root@ip-172-31-16-73:/home/ubuntu/Backend# docker inspect database | grep IPAddress
+Error: No such object: database
+root@ip-172-31-16-73:/home/ubuntu/Backend# docker inspect dd9e1c53379c | grep IPAddress
+            "SecondaryIPAddresses": null,
+            "IPAddress": "",
+                    "IPAddress": "",
+root@ip-172-31-16-73:/home/ubuntu/Backend# docker inspect dd9e1c53379c
+[
+    {
+        "Id": "dd9e1c53379cbde6c81d719f1019f7beb0fc9eddfebe9ba79de9023215f39d30",
+        "Created": "2024-04-16T05:33:51.645337669Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "--name",
+            "Database"
+        ],
+        "State": {
+            "Status": "exited",
+            "Running": false,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 0,
+            "ExitCode": 1,
+            "Error": "",
+            "StartedAt": "2024-04-16T05:33:52.536633537Z",
+            "FinishedAt": "2024-04-16T05:33:58.986880518Z"
+        },
+        "Image": "sha256:ac62fdd3ae2a1bbc8325a21934f6716e11d9a0bb7b39462346eee219a8fb1ee2",
+        "ResolvConfPath": "/var/lib/docker/containers/dd9e1c53379cbde6c81d719f1019f7beb0fc9eddfebe9ba79de9023215f39d30/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/dd9e1c53379cbde6c81d719f1019f7beb0fc9eddfebe9ba79de9023215f39d30/hostname",
+        "HostsPath": "/var/lib/docker/containers/dd9e1c53379cbde6c81d719f1019f7beb0fc9eddfebe9ba79de9023215f39d30/hosts",
+        "LogPath": "/var/lib/docker/containers/dd9e1c53379cbde6c81d719f1019f7beb0fc9eddfebe9ba79de9023215f39d30/dd9e1c53379cbde6c81d719f1019f7beb0fc9eddfebe9ba79de9023215f39d30-json.log",
+        "Name": "/epic_cannon",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "default",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                28,
+                166
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": true,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware",
+                "/sys/devices/virtual/powercap"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/b5dc90d5f4b76eea15b3e5c2d826d2b98d518e9baa3bc26db2bdd59b5eb0fb56-init/diff:/var/lib/docker/overlay2/g5i5hm92zg9m8i0qyob04ni3r/diff:/var/lib/docker/overlay2/bd916c1de7a8989f33f94d4a9fc37ce459ab0449978afc1a2853e41cfe3846e8/diff:/var/lib/docker/overlay2/b7a75a2b287bef2f6caeba0b815c3f6f29452f7ea05ba7a0325d7fcf7e66e376/diff:/var/lib/docker/overlay2/090cb712108e50514bbf4f2e7f20fa9dbe793626ec4bff5097db4ffb13b718a9/diff:/var/lib/docker/overlay2/9c0ff3fad72e00eb34d2ddde5f938e631fc27e2d35bdcd581cf32875f950ee7b/diff:/var/lib/docker/overlay2/f783da7faa3e76fba371c2804c1530f597d3e2c7cbabe62558a6ce5fdf02fdab/diff:/var/lib/docker/overlay2/424eaa4b28428e6e8a0b284b859dbd157ce0c44ca88a83afd68188cf4545f818/diff:/var/lib/docker/overlay2/0fe5385788dba8377e3af9bc5ee5405af5d13d43389749d6336ee11231547736/diff:/var/lib/docker/overlay2/c8571bf9d1d46f5ebf24e960346230957d0495499c608f627554dd0196bfe20d/diff:/var/lib/docker/overlay2/95f14bf19f156a6c5f40c8020a83d9de4aa374bb31e12d934ccca88759390e45/diff:/var/lib/docker/overlay2/c21a136b0602b0ed1c9cd190ffbb38db91e916b9e3ec27a3d1722bfa5f16d84e/diff",
+                "MergedDir": "/var/lib/docker/overlay2/b5dc90d5f4b76eea15b3e5c2d826d2b98d518e9baa3bc26db2bdd59b5eb0fb56/merged",
+                "UpperDir": "/var/lib/docker/overlay2/b5dc90d5f4b76eea15b3e5c2d826d2b98d518e9baa3bc26db2bdd59b5eb0fb56/diff",
+                "WorkDir": "/var/lib/docker/overlay2/b5dc90d5f4b76eea15b3e5c2d826d2b98d518e9baa3bc26db2bdd59b5eb0fb56/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "5109fc5118892658d28c91e3d559f27f58610945161e421dad2b2c527cc585c4",
+                "Source": "/var/lib/docker/volumes/5109fc5118892658d28c91e3d559f27f58610945161e421dad2b2c527cc585c4/_data",
+                "Destination": "/var/lib/mysql",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "dd9e1c53379c",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "3306/tcp": {},
+                "33060/tcp": {}
+            },
+            "Tty": true,
+            "OpenStdin": true,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GOSU_VERSION=1.17",
+                "MYSQL_MAJOR=innovation",
+                "MYSQL_VERSION=8.3.0-1.el8",
+                "MYSQL_SHELL_VERSION=8.3.0-1.el8",
+                "MYSQL_ROOT_PASSWORD=4321"
+            ],
+            "Cmd": [
+                "--name",
+                "Database"
+            ],
+            "Image": "database:student",
+            "Volumes": {
+                "/var/lib/mysql": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {}
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "a49e254c06d6430dd2dd2091685328743486d2b640430edad025c92760433e43",
+            "SandboxKey": "/var/run/docker/netns/a49e254c06d6",
+            "Ports": {},
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "",
+            "Gateway": "",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "",
+            "IPPrefixLen": 0,
+            "IPv6Gateway": "",
+            "MacAddress": "",
+            "Networks": {
+                "bridge": {
+root@ip-172-31-16-73:/home/ubuntu/Backend# docker run -d -P --name Database database:student
+2acaffd7b95371dde9270c487b1e6a198a7d6e8ba5afcd58867e7dea540f0b1a
+root@ip-172-31-16-73:/home/ubuntu/Backend# docker ps
+CONTAINER ID   IMAGE              COMMAND                  CREATED         STATUS         PORTS                                                                                        NAMES
+2acaffd7b953   database:student   "docker-entrypoint.s…"   9 seconds ago   Up 7 seconds   0.0.0.0:32771->3306/tcp, :::32771->3306/tcp, 0.0.0.0:32770->33060/tcp, :::32770->33060/tcp   Database
+root@ip-172-31-16-73:/home/ubuntu/Backend# docker inspect Database
+[
+    {
+        "Id": "2acaffd7b95371dde9270c487b1e6a198a7d6e8ba5afcd58867e7dea540f0b1a",
+        "Created": "2024-04-16T05:38:14.893869421Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "mysqld"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 5441,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2024-04-16T05:38:15.385738599Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:ac62fdd3ae2a1bbc8325a21934f6716e11d9a0bb7b39462346eee219a8fb1ee2",
+        "ResolvConfPath": "/var/lib/docker/containers/2acaffd7b95371dde9270c487b1e6a198a7d6e8ba5afcd58867e7dea540f0b1a/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/2acaffd7b95371dde9270c487b1e6a198a7d6e8ba5afcd58867e7dea540f0b1a/hostname",
+        "HostsPath": "/var/lib/docker/containers/2acaffd7b95371dde9270c487b1e6a198a7d6e8ba5afcd58867e7dea540f0b1a/hosts",
+        "LogPath": "/var/lib/docker/containers/2acaffd7b95371dde9270c487b1e6a198a7d6e8ba5afcd58867e7dea540f0b1a/2acaffd7b95371dde9270c487b1e6a198a7d6e8ba5afcd58867e7dea540f0b1a-json.log",
+        "Name": "/Database",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "default",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                28,
+                166
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": true,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware",
+                "/sys/devices/virtual/powercap"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/f9378c8f181c9e13369db687fcd4c9b7fecb8782113db149503aca856eb08f37-init/diff:/var/lib/docker/overlay2/g5i5hm92zg9m8i0qyob04ni3r/diff:/var/lib/docker/overlay2/bd916c1de7a8989f33f94d4a9fc37ce459ab0449978afc1a2853e41cfe3846e8/diff:/var/lib/docker/overlay2/b7a75a2b287bef2f6caeba0b815c3f6f29452f7ea05ba7a0325d7fcf7e66e376/diff:/var/lib/docker/overlay2/090cb712108e50514bbf4f2e7f20fa9dbe793626ec4bff5097db4ffb13b718a9/diff:/var/lib/docker/overlay2/9c0ff3fad72e00eb34d2ddde5f938e631fc27e2d35bdcd581cf32875f950ee7b/diff:/var/lib/docker/overlay2/f783da7faa3e76fba371c2804c1530f597d3e2c7cbabe62558a6ce5fdf02fdab/diff:/var/lib/docker/overlay2/424eaa4b28428e6e8a0b284b859dbd157ce0c44ca88a83afd68188cf4545f818/diff:/var/lib/docker/overlay2/0fe5385788dba8377e3af9bc5ee5405af5d13d43389749d6336ee11231547736/diff:/var/lib/docker/overlay2/c8571bf9d1d46f5ebf24e960346230957d0495499c608f627554dd0196bfe20d/diff:/var/lib/docker/overlay2/95f14bf19f156a6c5f40c8020a83d9de4aa374bb31e12d934ccca88759390e45/diff:/var/lib/docker/overlay2/c21a136b0602b0ed1c9cd190ffbb38db91e916b9e3ec27a3d1722bfa5f16d84e/diff",
+                "MergedDir": "/var/lib/docker/overlay2/f9378c8f181c9e13369db687fcd4c9b7fecb8782113db149503aca856eb08f37/merged",
+                "UpperDir": "/var/lib/docker/overlay2/f9378c8f181c9e13369db687fcd4c9b7fecb8782113db149503aca856eb08f37/diff",
+                "WorkDir": "/var/lib/docker/overlay2/f9378c8f181c9e13369db687fcd4c9b7fecb8782113db149503aca856eb08f37/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "2ae2af42f290fb5e6c4f47a8d0020a6b2d92be479bea28e206383b1af6a86d00",
+                "Source": "/var/lib/docker/volumes/2ae2af42f290fb5e6c4f47a8d0020a6b2d92be479bea28e206383b1af6a86d00/_data",
+                "Destination": "/var/lib/mysql",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "2acaffd7b953",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "3306/tcp": {},
+                "33060/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GOSU_VERSION=1.17",
+                "MYSQL_MAJOR=innovation",
+                "MYSQL_VERSION=8.3.0-1.el8",
+                "MYSQL_SHELL_VERSION=8.3.0-1.el8",
+                "MYSQL_ROOT_PASSWORD=4321"
+            ],
+            "Cmd": [
+                "mysqld"
+            ],
+            "Image": "database:student",
+            "Volumes": {
+                "/var/lib/mysql": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {}
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "22a86b6c62e59e7c04f647e3e6299106d0c8ce10f16120fd719a65e2d421034d",
+            "SandboxKey": "/var/run/docker/netns/22a86b6c62e5",
+            "Ports": {
+                "3306/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "32771"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "32771"
+                    }
+                ],
+                "33060/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "32770"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "32770"
+                    }
+                ]
+            },
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "c16a5573ec1654aa475efd073a3b06821a1250a1cb05573caa6541bf4013b800",
+            "Gateway": "172.17.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "172.17.0.2",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "MacAddress": "02:42:ac:11:00:02",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "MacAddress": "02:42:ac:11:00:02",
+                    "NetworkID": "50a2ce379e7c65bc223a811013c9e7cac049cf38d4fee2f7393c129dcd2f0104",
+                    "EndpointID": "c16a5573ec1654aa475efd073a3b06821a1250a1cb05573caa6541bf4013b800",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DriverOpts": null,
+                    "DNSNames": null
+root@ip-172-31-16-73:/home/ubuntu# docker images
+REPOSITORY   TAG       IMAGE ID   CREATED   SIZE
+root@ip-172-31-16-73:/home/ubuntu# docker build -t database:student -f Database/Dockerfile
+ERROR: "docker buildx build" requires exactly 1 argument.
+See 'docker buildx build --help'.
+
+Usage:  docker buildx build [OPTIONS] PATH | URL | -
+
+Start a build
+root@ip-172-31-16-73:/home/ubuntu# docker build -t database:student --file Database/Dockerfile
+ERROR: "docker buildx build" requires exactly 1 argument.
+See 'docker buildx build --help'.
+
+Usage:  docker buildx build [OPTIONS] PATH | URL | -
+
+Start a build
+root@ip-172-31-16-73:/home/ubuntu# cd Database/
+root@ip-172-31-16-73:/home/ubuntu/Database# docker build -t database:student .
+[+] Building 0.5s (7/7) FINISHED                                                                                                                       docker:default
+ => [internal] load build definition from Dockerfile                                                                                                             0.0s
+ => => transferring dockerfile: 178B                                                                                                                             0.0s
+ => [internal] load metadata for docker.io/library/mysql:latest                                                                                                  0.3s
+ => [internal] load .dockerignore                                                                                                                                0.0s
+ => => transferring context: 2B                                                                                                                                  0.0s
+ => [internal] load build context                                                                                                                                0.0s
+ => => transferring context: 37B                                                                                                                                 0.0s
+ => [1/2] FROM docker.io/library/mysql:latest@sha256:0f2e15fb8b47db2518b1428239ed3e3fe6a6693401b2cf19552063562cfc2fc4                                            0.0s
+ => CACHED [2/2] COPY student-rds.sql /docker-entrypoint-initdb.d/                                                                                               0.0s
+ => exporting to image                                                                                                                                           0.0s
+ => => exporting layers                                                                                                                                          0.0s
+ => => writing image sha256:ac62fdd3ae2a1bbc8325a21934f6716e11d9a0bb7b39462346eee219a8fb1ee2                                                                     0.0s
+ => => naming to docker.io/library/database:student                                                                                                              0.0s
+root@ip-172-31-16-73:/home/ubuntu/Database# cd ..
+root@ip-172-31-16-73:/home/ubuntu# docker run -d -P --name Database database:student
+c5780967215067174389fe1a50193b7ebbf6244bab76cba342a032f9155152f8
+root@ip-172-31-16-73:/home/ubuntu# docker ps
+CONTAINER ID   IMAGE              COMMAND                  CREATED         STATUS         PORTS                                                                                        NAMES
+c57809672150   database:student   "docker-entrypoint.s…"   5 seconds ago   Up 4 seconds   0.0.0.0:32773->3306/tcp, :::32773->3306/tcp, 0.0.0.0:32772->33060/tcp, :::32772->33060/tcp   Database
+root@ip-172-31-16-73:/home/ubuntu# docker inspect Database
+[
+    {
+        "Id": "c5780967215067174389fe1a50193b7ebbf6244bab76cba342a032f9155152f8",
+        "Created": "2024-04-16T05:43:11.112777754Z",
+        "Path": "docker-entrypoint.sh",
+        "Args": [
+            "mysqld"
+        ],
+        "State": {
+            "Status": "running",
+            "Running": true,
+            "Paused": false,
+            "Restarting": false,
+            "OOMKilled": false,
+            "Dead": false,
+            "Pid": 6100,
+            "ExitCode": 0,
+            "Error": "",
+            "StartedAt": "2024-04-16T05:43:12.0598032Z",
+            "FinishedAt": "0001-01-01T00:00:00Z"
+        },
+        "Image": "sha256:ac62fdd3ae2a1bbc8325a21934f6716e11d9a0bb7b39462346eee219a8fb1ee2",
+        "ResolvConfPath": "/var/lib/docker/containers/c5780967215067174389fe1a50193b7ebbf6244bab76cba342a032f9155152f8/resolv.conf",
+        "HostnamePath": "/var/lib/docker/containers/c5780967215067174389fe1a50193b7ebbf6244bab76cba342a032f9155152f8/hostname",
+        "HostsPath": "/var/lib/docker/containers/c5780967215067174389fe1a50193b7ebbf6244bab76cba342a032f9155152f8/hosts",
+        "LogPath": "/var/lib/docker/containers/c5780967215067174389fe1a50193b7ebbf6244bab76cba342a032f9155152f8/c5780967215067174389fe1a50193b7ebbf6244bab76cba342a032f9155152f8-json.log",
+        "Name": "/Database",
+        "RestartCount": 0,
+        "Driver": "overlay2",
+        "Platform": "linux",
+        "MountLabel": "",
+        "ProcessLabel": "",
+        "AppArmorProfile": "docker-default",
+        "ExecIDs": null,
+        "HostConfig": {
+            "Binds": null,
+            "ContainerIDFile": "",
+            "LogConfig": {
+                "Type": "json-file",
+                "Config": {}
+            },
+            "NetworkMode": "default",
+            "PortBindings": {},
+            "RestartPolicy": {
+                "Name": "no",
+                "MaximumRetryCount": 0
+            },
+            "AutoRemove": false,
+            "VolumeDriver": "",
+            "VolumesFrom": null,
+            "ConsoleSize": [
+                28,
+                166
+            ],
+            "CapAdd": null,
+            "CapDrop": null,
+            "CgroupnsMode": "private",
+            "Dns": [],
+            "DnsOptions": [],
+            "DnsSearch": [],
+            "ExtraHosts": null,
+            "GroupAdd": null,
+            "IpcMode": "private",
+            "Cgroup": "",
+            "Links": null,
+            "OomScoreAdj": 0,
+            "PidMode": "",
+            "Privileged": false,
+            "PublishAllPorts": true,
+            "ReadonlyRootfs": false,
+            "SecurityOpt": null,
+            "UTSMode": "",
+            "UsernsMode": "",
+            "ShmSize": 67108864,
+            "Runtime": "runc",
+            "Isolation": "",
+            "CpuShares": 0,
+            "Memory": 0,
+            "NanoCpus": 0,
+            "CgroupParent": "",
+            "BlkioWeight": 0,
+            "BlkioWeightDevice": [],
+            "BlkioDeviceReadBps": [],
+            "BlkioDeviceWriteBps": [],
+            "BlkioDeviceReadIOps": [],
+            "BlkioDeviceWriteIOps": [],
+            "CpuPeriod": 0,
+            "CpuQuota": 0,
+            "CpuRealtimePeriod": 0,
+            "CpuRealtimeRuntime": 0,
+            "CpusetCpus": "",
+            "CpusetMems": "",
+            "Devices": [],
+            "DeviceCgroupRules": null,
+            "DeviceRequests": null,
+            "MemoryReservation": 0,
+            "MemorySwap": 0,
+            "MemorySwappiness": null,
+            "OomKillDisable": null,
+            "PidsLimit": null,
+            "Ulimits": [],
+            "CpuCount": 0,
+            "CpuPercent": 0,
+            "IOMaximumIOps": 0,
+            "IOMaximumBandwidth": 0,
+            "MaskedPaths": [
+                "/proc/asound",
+                "/proc/acpi",
+                "/proc/kcore",
+                "/proc/keys",
+                "/proc/latency_stats",
+                "/proc/timer_list",
+                "/proc/timer_stats",
+                "/proc/sched_debug",
+                "/proc/scsi",
+                "/sys/firmware",
+                "/sys/devices/virtual/powercap"
+            ],
+            "ReadonlyPaths": [
+                "/proc/bus",
+                "/proc/fs",
+                "/proc/irq",
+                "/proc/sys",
+                "/proc/sysrq-trigger"
+            ]
+        },
+        "GraphDriver": {
+            "Data": {
+                "LowerDir": "/var/lib/docker/overlay2/757bc71f5d20fbc97c750d04003287afe6dfa3e34de0adc2c40c9da91b5d70c7-init/diff:/var/lib/docker/overlay2/g5i5hm92zg9m8i0qyob04ni3r/diff:/var/lib/docker/overlay2/bd916c1de7a8989f33f94d4a9fc37ce459ab0449978afc1a2853e41cfe3846e8/diff:/var/lib/docker/overlay2/b7a75a2b287bef2f6caeba0b815c3f6f29452f7ea05ba7a0325d7fcf7e66e376/diff:/var/lib/docker/overlay2/090cb712108e50514bbf4f2e7f20fa9dbe793626ec4bff5097db4ffb13b718a9/diff:/var/lib/docker/overlay2/9c0ff3fad72e00eb34d2ddde5f938e631fc27e2d35bdcd581cf32875f950ee7b/diff:/var/lib/docker/overlay2/f783da7faa3e76fba371c2804c1530f597d3e2c7cbabe62558a6ce5fdf02fdab/diff:/var/lib/docker/overlay2/424eaa4b28428e6e8a0b284b859dbd157ce0c44ca88a83afd68188cf4545f818/diff:/var/lib/docker/overlay2/0fe5385788dba8377e3af9bc5ee5405af5d13d43389749d6336ee11231547736/diff:/var/lib/docker/overlay2/c8571bf9d1d46f5ebf24e960346230957d0495499c608f627554dd0196bfe20d/diff:/var/lib/docker/overlay2/95f14bf19f156a6c5f40c8020a83d9de4aa374bb31e12d934ccca88759390e45/diff:/var/lib/docker/overlay2/c21a136b0602b0ed1c9cd190ffbb38db91e916b9e3ec27a3d1722bfa5f16d84e/diff",
+                "MergedDir": "/var/lib/docker/overlay2/757bc71f5d20fbc97c750d04003287afe6dfa3e34de0adc2c40c9da91b5d70c7/merged",
+                "UpperDir": "/var/lib/docker/overlay2/757bc71f5d20fbc97c750d04003287afe6dfa3e34de0adc2c40c9da91b5d70c7/diff",
+                "WorkDir": "/var/lib/docker/overlay2/757bc71f5d20fbc97c750d04003287afe6dfa3e34de0adc2c40c9da91b5d70c7/work"
+            },
+            "Name": "overlay2"
+        },
+        "Mounts": [
+            {
+                "Type": "volume",
+                "Name": "9bf2b145a3e52adceb379d38542288b931463954083c27ba229c2fcec87fb49a",
+                "Source": "/var/lib/docker/volumes/9bf2b145a3e52adceb379d38542288b931463954083c27ba229c2fcec87fb49a/_data",
+                "Destination": "/var/lib/mysql",
+                "Driver": "local",
+                "Mode": "",
+                "RW": true,
+                "Propagation": ""
+            }
+        ],
+        "Config": {
+            "Hostname": "c57809672150",
+            "Domainname": "",
+            "User": "",
+            "AttachStdin": false,
+            "AttachStdout": false,
+            "AttachStderr": false,
+            "ExposedPorts": {
+                "3306/tcp": {},
+                "33060/tcp": {}
+            },
+            "Tty": false,
+            "OpenStdin": false,
+            "StdinOnce": false,
+            "Env": [
+                "PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin",
+                "GOSU_VERSION=1.17",
+                "MYSQL_MAJOR=innovation",
+                "MYSQL_VERSION=8.3.0-1.el8",
+                "MYSQL_SHELL_VERSION=8.3.0-1.el8",
+                "MYSQL_ROOT_PASSWORD=4321"
+            ],
+            "Cmd": [
+                "mysqld"
+            ],
+            "Image": "database:student",
+            "Volumes": {
+                "/var/lib/mysql": {}
+            },
+            "WorkingDir": "",
+            "Entrypoint": [
+                "docker-entrypoint.sh"
+            ],
+            "OnBuild": null,
+            "Labels": {}
+        },
+        "NetworkSettings": {
+            "Bridge": "",
+            "SandboxID": "b40d8a4e293b4cd6501a0bd76a199a3880c0ca66ec9dca9fd48564fafea18ea0",
+            "SandboxKey": "/var/run/docker/netns/b40d8a4e293b",
+            "Ports": {
+                "3306/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "32773"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "32773"
+                    }
+                ],
+                "33060/tcp": [
+                    {
+                        "HostIp": "0.0.0.0",
+                        "HostPort": "32772"
+                    },
+                    {
+                        "HostIp": "::",
+                        "HostPort": "32772"
+                    }
+                ]
+            },
+            "HairpinMode": false,
+            "LinkLocalIPv6Address": "",
+            "LinkLocalIPv6PrefixLen": 0,
+            "SecondaryIPAddresses": null,
+            "SecondaryIPv6Addresses": null,
+            "EndpointID": "d47976251c4d23eafb861fb153fcefa3b872936029e60f5c99f2e06a0ee4ac88",
+            "Gateway": "172.17.0.1",
+            "GlobalIPv6Address": "",
+            "GlobalIPv6PrefixLen": 0,
+            "IPAddress": "172.17.0.2",
+            "IPPrefixLen": 16,
+            "IPv6Gateway": "",
+            "MacAddress": "02:42:ac:11:00:02",
+            "Networks": {
+                "bridge": {
+                    "IPAMConfig": null,
+                    "Links": null,
+                    "Aliases": null,
+                    "MacAddress": "02:42:ac:11:00:02",
+                    "NetworkID": "50a2ce379e7c65bc223a811013c9e7cac049cf38d4fee2f7393c129dcd2f0104",
+                    "EndpointID": "d47976251c4d23eafb861fb153fcefa3b872936029e60f5c99f2e06a0ee4ac88",
+                    "Gateway": "172.17.0.1",
+                    "IPAddress": "172.17.0.2",
+                    "IPPrefixLen": 16,
+                    "IPv6Gateway": "",
+                    "GlobalIPv6Address": "",
+                    "GlobalIPv6PrefixLen": 0,
+                    "DriverOpts": null,
+                    "DNSNames": null
+                }
+            }
+        }
+    }
+]
+root@ip-172-31-16-73:/home/ubuntu# cd Backend/
+root@ip-172-31-16-73:/home/ubuntu/Backend# ls
+Dockerfile  context.xml  student.war
+root@ip-172-31-16-73:/home/ubuntu/Backend# vim context.xml 
+root@ip-172-31-16-73:/home/ubuntu/Backend# docker build -t backend:student .
+[+] Building 1.0s (17/17) FINISHED                                                                                                                     docker:default
+ => [internal] load build definition from Dockerfile                                                                                                             0.0s
+ => => transferring dockerfile: 532B                                                                                                                             0.0s
+ => [internal] load metadata for docker.io/library/centos:7                                                                                                      0.4s
+ => [internal] load .dockerignore                                                                                                                                0.0s
+ => => transferring context: 2B                                                                                                                                  0.0s
+ => [ 1/10] FROM docker.io/library/centos:7@sha256:be65f488b7764ad3638f236b7b515b3678369a5124c47b8d32916d6487418ea4                                              0.0s
+ => CACHED [10/10] ADD https://s3-us-west-2.amazonaws.com/studentapi-cit/mysql-connector.jar lib/mysql-connector.jar                                             0.2s
+ => [internal] load build context                                                                                                                                0.0s
+ => => transferring context: 1.67kB                                                                                                                              0.0s
+ => [ 5/10] ADD https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.99/bin/apache-tomcat-8.5.99.tar.gz /opt/                                                           0.0s
+ => CACHED [ 2/10] RUN yum update -y                                                                                                                             0.0s
+ => CACHED [ 3/10] RUN yum install java -y                                                                                                                       0.0s
+ => CACHED [ 4/10] WORKDIR /opt                                                                                                                                  0.0s
+ => CACHED [ 5/10] ADD https://dlcdn.apache.org/tomcat/tomcat-8/v8.5.99/bin/apache-tomcat-8.5.99.tar.gz /opt/                                                    0.0s
+ => CACHED [ 6/10] RUN tar -xzf apache-tomcat-8.5.99.tar.gz                                                                                                      0.0s
+ => CACHED [ 7/10] WORKDIR /opt/apache-tomcat-8.5.99                                                                                                             0.0s
+ => CACHED [ 8/10] COPY student.war webapps/student.war                                                                                                          0.0s
+ => [ 9/10] COPY context.xml conf/context.xml                                                                                                                    0.1s
+ => [10/10] ADD https://s3-us-west-2.amazonaws.com/studentapi-cit/mysql-connector.jar lib/mysql-connector.jar                                                    0.1s
+ => exporting to image                                                                                                                                           0.1s
+ => => exporting layers                                                                                                                                          0.1s
+ => => writing image sha256:f298ad38f745c4c8c402e09befea728937c7de0640f0fbf6d64423056c88ac22                                                                     0.0s
+ => => naming to docker.io/library/backend:student                                                                                                               0.0s
+root@ip-172-31-16-73:/home/ubuntu/Backend# docker run -d -P --name Backend backend:student
+f806c25bef280a488c39b1c636b81f52e3311d902f91b01599ba4ca23af6bad6
+root@ip-172-31-16-73:/home/ubuntu/Backend# docker ps
+CONTAINER ID   IMAGE              COMMAND                  CREATED         STATUS         PORTS                                                                                        NAMES
+f806c25bef28   backend:student    "bin/catalina.sh run"    5 seconds ago   Up 3 seconds   0.0.0.0:32774->8080/tcp, :::32774->8080/tcp                                                  Backend
+c57809672150   database:student   "docker-entrypoint.s…"   3 minutes ago   Up 3 minutes   0.0.0.0:32773->3306/tcp, :::32773->3306/tcp, 0.0.0.0:32772->33060/tcp, :::32772->33060/tcp   Database
+root@ip-172-31-16-73:/home/ubuntu/Backend# 
+
+----------------------------------------------------------------------------------------------------------------------------
+
+CONTAINER ID   IMAGE              COMMAND                  CREATED         STATUS         PORTS                                                                                        NAMES
+f806c25bef28   backend:student    "bin/catalina.sh run"    5 seconds ago   Up 3 seconds   0.0.0.0:32774->8080/tcp, :::32774->8080/tcp                                                  Backend
+c57809672150   database:student   "docker-entrypoint.s…"   3 minutes ago   Up 3 minutes   0.0.0.0:32773->3306/tcp, :::32773->3306/tcp, 0.0.0.0:32772->33060/tcp, :::32772->33060/tcp   Database
+root@ip-172-31-16-73:/home/ubuntu/Backend# docker exec -it Database bash
+bash-4.4# ls
+bin  boot  dev  docker-entrypoint-initdb.d  etc  home  lib  lib64  media  mnt  opt  proc  root  run  sbin  srv  sys  tmp  usr  var
+bash-4.4# mysql -u root
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+bash-4.4# mysql        
+ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
+bash-4.4# mysql -u root -p4321
+mysql: [Warning] Using a password on the command line interface can be insecure.
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 12
+Server version: 8.3.0 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2024, Oracle and/or its affiliates.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| studentapp         |
+| sys                |
++--------------------+
+5 rows in set (0.03 sec)
+
+mysql> use studentapp
+Reading table information for completion of table and column names
+You can turn off this feature to get a quicker startup with -A
+
+Database changed
+mysql> select * from student;
+ERROR 1146 (42S02): Table 'studentapp.student' doesn't exist
+mysql> show tables;
++----------------------+
+| Tables_in_studentapp |
++----------------------+
+| students             |
++----------------------+
+1 row in set (0.00 sec)
+
+mysql> select * from students;
++------------+--------------+--------------+-------------+--------------+-----------------+---------------------+
+| student_id | student_name | student_addr | student_age | student_qual | student_percent | student_year_passed |
++------------+--------------+--------------+-------------+--------------+-----------------+---------------------+
+|          1 | k            | klj          | kj          | kj           | kj              | b;;kj               |
++------------+--------------+--------------+-------------+--------------+-----------------+---------------------+
+1 row in set (0.00 sec)
+
+mysql> 
