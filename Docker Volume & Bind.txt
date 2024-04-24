@@ -1,0 +1,148 @@
+root@ip-172-31-22-247:/home/ubuntu# docker volume ls
+DRIVER    VOLUME NAME
+local     1ff0621783832cfb3501dbab37b1f52bae933d8080316c47f0d52843b681f5b2
+local     852c51e68068b77779cf2db39a531c9d8600023f9ffa3a5325e927a59dad3374
+local     vol
+root@ip-172-31-22-247:/home/ubuntu# docker volume create b28 
+b28
+root@ip-172-31-22-247:/home/ubuntu# cd /var/lib/docker/volumes/b28/
+root@ip-172-31-22-247:/var/lib/docker/volumes/b28# ls
+_data
+root@ip-172-31-22-247:/var/lib/docker/volumes/b28# cd _data/
+root@ip-172-31-22-247:/var/lib/docker/volumes/b28/_data# ls
+root@ip-172-31-22-247:/var/lib/docker/volumes/b28/_data# echo "Hey Shan" > index.html
+root@ip-172-31-22-247:/var/lib/docker/volumes/b28/_data# docker --help
+
+unknown shorthand flag: 'd' in -d
+See 'docker --help'.
+
+Usage:  docker [OPTIONS] COMMAND
+
+A self-sufficient runtime for containers
+
+Common Commands:
+  run         Create and run a new container from an image
+  exec        Execute a command in a running container
+  ps          List containers
+  build       Build an image from a Dockerfile
+  pull        Download an image from a registry
+  push        Upload an image to a registry
+  images      List images
+  login       Log in to a registry
+  logout      Log out from a registry
+  search      Search Docker Hub for images
+  version     Show the Docker version information
+  info        Display system-wide information
+
+Management Commands:
+  builder     Manage builds
+  container   Manage containers
+  context     Manage contexts
+  image       Manage images
+  manifest    Manage Docker image manifests and manifest lists
+  network     Manage networks
+  plugin      Manage plugins
+  system      Manage Docker
+  trust       Manage trust on Docker images
+  volume      Manage volumes
+
+Swarm Commands:
+  swarm       Manage Swarm
+
+Commands:
+  attach      Attach local standard input, output, and error streams to a running container
+  commit      Create a new image from a container's changes
+  cp          Copy files/folders between a container and the local filesystem
+  create      Create a new container
+  diff        Inspect changes to files or directories on a container's filesystem
+  events      Get real time events from the server
+  export      Export a container's filesystem as a tar archive
+  history     Show the history of an image
+  import      Import the contents from a tarball to create a filesystem image
+  inspect     Return low-level information on Docker objects
+  kill        Kill one or more running containers
+  load        Load an image from a tar archive or STDIN
+  logs        Fetch the logs of a container
+  pause       Pause all processes within one or more containers
+  port        List port mappings or a specific mapping for the container
+  rename      Rename a container
+  restart     Restart one or more containers
+  rm          Remove one or more containers
+  rmi         Remove one or more images
+  save        Save one or more images to a tar archive (streamed to STDOUT by default)
+  start       Start one or more stopped containers
+  stats       Display a live stream of container(s) resource usage statistics
+  stop        Stop one or more running containers
+  tag         Create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+  top         Display the running processes of a container
+  unpause     Unpause all processes within one or more containers
+  update      Update configuration of one or more containers
+  wait        Block until one or more containers stop, then print their exit codes
+
+Global Options:
+      --config string      Location of client config files (default "/root/.docker")
+  -c, --context string     Name of the context to use to connect to the daemon (overrides DOCKER_HOST env var and default context
+                           set with "docker context use")
+  -D, --debug              Enable debug mode
+  -H, --host list          Daemon socket to connect to
+  -l, --log-level string   Set the logging level ("debug", "info", "warn", "error", "fatal") (default "info")
+      --tls                Use TLS; implied by --tlsverify
+      --tlscacert string   Trust certs signed only by this CA (default "/root/.docker/ca.pem")
+      --tlscert string     Path to TLS certificate file (default "/root/.docker/cert.pem")
+      --tlskey string      Path to TLS key file (default "/root/.docker/key.pem")
+      --tlsverify          Use TLS and verify the remote
+  -v, --version            Print version information and quit
+
+Run 'docker COMMAND --help' for more information on a command.
+
+For more help on how to use Docker, head to https://docs.docker.com/go/guides/
+
+root@ip-172-31-22-247:/var/lib/docker/volumes/b28/_data# docker container run -d -P -v b28:/usr/share/nginx/html/ nginx
+Unable to find image 'nginx:latest' locally
+latest: Pulling from library/nginx
+13808c22b207: Already exists 
+ad34559c894f: Pull complete 
+e871086e0ba8: Pull complete 
+1cdf2e0600bb: Pull complete 
+c791c3089e36: Pull complete 
+5941304296e7: Pull complete 
+c7cbceefe40c: Pull complete 
+Digest: sha256:d1c3a4e634ab6b7089dfc0b1e70a401972493e9e16a65b3f655b3a07955571f7
+Status: Downloaded newer image for nginx:latest
+7d910dc3adc65285f0659785563a797e92a54e99fca15784a072f797e624c4e4
+root@ip-172-31-22-247:/var/lib/docker/volumes/b28/_data# docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED         STATUS         PORTS                                     NAMES
+7d910dc3adc6   nginx     "/docker-entrypoint.…"   7 seconds ago   Up 6 seconds   0.0.0.0:32768->80/tcp, :::32768->80/tcp   practical_murdock
+root@ip-172-31-22-247:/var/lib/docker/volumes/b28/_data# curl ifconfig.me
+51.20.108.51root@ip-172-31-22-247:/var/lib/docker/volumes/b28/_data# curl 51.20.108.51:32768
+Hey Shan
+
+
+
+                                 #########Bind#############
+
+root@ip-172-31-22-247:/var/lib/docker/volumes/b28/_data# cd /
+root@ip-172-31-22-247:/# mkdir /mnt/bind
+root@ip-172-31-22-247:/# docker container run -d -P -v /mnt/bind:/usr/share/nginx/html/ nginx
+18bf914940b73f90039672d976ada02d31623ae3f6ce2a831c3b9d95596c0dd6
+root@ip-172-31-22-247:/# docker ps
+CONTAINER ID   IMAGE     COMMAND                  CREATED          STATUS          PORTS                                     NAMES
+18bf914940b7   nginx     "/docker-entrypoint.…"   11 seconds ago   Up 10 seconds   0.0.0.0:32769->80/tcp, :::32769->80/tcp   nostalgic_lovelace
+7d910dc3adc6   nginx     "/docker-entrypoint.…"   2 minutes ago    Up 2 minutes    0.0.0.0:32768->80/tcp, :::32768->80/tcp   practical_murdock
+root@ip-172-31-22-247:/# curl 51.20.108.51:32769
+<html>
+<head><title>403 Forbidden</title></head>
+<body>
+<center><h1>403 Forbidden</h1></center>
+<hr><center>nginx/1.25.5</center>
+</body>
+</html>
+root@ip-172-31-22-247:/# cd /mnt/
+root@ip-172-31-22-247:/mnt# ls
+bind
+root@ip-172-31-22-247:/mnt# cd bind/
+root@ip-172-31-22-247:/mnt/bind# ls
+root@ip-172-31-22-247:/mnt/bind# cat > index.html
+Hiii Worldroot@ip-172-31-22-247:/mnt/bind# 
+root@ip-172-31-22-247:/mnt/bind# curl 51.20.108.51:32769
+Hiii World
